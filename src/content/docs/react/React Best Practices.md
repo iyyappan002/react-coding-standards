@@ -860,10 +860,17 @@ function Dashboard() {
 
 ## Lazy Loading with React.lazy
 
+
+:::note
 Use React.lazy and Suspense for code splitting.
 
-Note<br>
+
 lazy loading is a technique used to improve the performance of a React application by loading components only when they are needed. Instead of loading all components at once, lazy loading ensures that only the components required for the initial view are loaded first, while other components are loaded as the user navigates through the app. This can lead to faster initial load times and a better user experience, especially in large applications.
+
+:::
+
+
+
 
 
 
@@ -910,11 +917,13 @@ function App() {
 
 ## Use useMemo Hook
 
+
+:::note
 Use useMemo to memoize expensive calculations.
 
-Note<br>
 useMemo is a React hook that memoizes the result of an expensive calculation, recomputing it only when its dependencies change. This helps optimize performance by avoiding unnecessary recalculations on every render. It's particularly useful for computationally intensive operations or maintaining referential equality of objects and arrays, thereby preventing unnecessary re-renders of child components. Use it to ensure your React applications run efficiently, but only when you identify performance bottlenecks to avoid premature optimization.
 
+:::
 
 
 **Good**
