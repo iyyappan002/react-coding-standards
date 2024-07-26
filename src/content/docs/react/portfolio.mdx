@@ -1,0 +1,21 @@
+---
+title: Portfolio
+description: Portfolio.
+tableOfContents: false
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Image } from 'astro:assets';
+import kmlogo from '../../../assets/kmlogo.png';
+import vilogo from '../../../assets/vilogo.png'; 
+import PortfolioCard from '../../../components/PortfolioCard.astro';
+
+
+<CardGrid stagger>
+<PortfolioCard imgClass="w-8" siteUrl="https://www.kalyanmatrimony.com" logo={kmlogo.src} title="Kalyan Matrimony" description="Kalyan Matrimony from Kalyan Jewellers Group. Kalyan Matrimony utilises advanced matchmaking technology to ensure quicker results and customised support.
+"/>
+
+<PortfolioCard imgClass="w-8" siteUrl="https://www.ventureintelligence.com" logo={vilogo.src} title="Venture Intelligence" description="The Venture Intelligence service, launched in 2002, is the leading source of information and analysis on private company financials, transactions (private equity, venture capital and M&A) and their valuations in India.
+"/>
+
+</CardGrid>
